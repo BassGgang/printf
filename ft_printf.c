@@ -6,7 +6,7 @@
 /*   By: kmatsuna <kmatsuna@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/05 16:03:43 by kmatsuna          #+#    #+#             */
-/*   Updated: 2024/09/05 16:21:26 by kmatsuna         ###   ########.fr       */
+/*   Updated: 2024/09/10 18:58:48 by kmatsuna         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ int	ft_printf(const char *input, ...)
 	int			num;
 
 	num = 0;
-	save = ft_stardup(input); //なんでアスタリスクいらないの？
+	save = ft_stardup(input); //なんでアスタリスクいらないの？→変え値がポインタだから関数の前にポインタがついてる。(int *)func()って感じ
 	if (!save)
 		return (0);
 	va_start(args, input);

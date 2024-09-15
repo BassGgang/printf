@@ -6,7 +6,7 @@
 /*   By: kmatsuna <kmatsuna@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/05 16:23:23 by kmatsuna          #+#    #+#             */
-/*   Updated: 2024/09/05 16:47:49 by kmatsuna         ###   ########.fr       */
+/*   Updated: 2024/09/13 20:18:27 by kmatsuna         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ int	ft_count_output(const char *save, va_list arg)
 		if (save[i] == '%')
 		{
 			i++;
-			c += ft_treat_something(save[i], args);
+			c += ft_treat_something(save[i], args); //"a = a+b" = "a += b"
 		}
 	}
 }
