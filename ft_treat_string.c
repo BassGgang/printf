@@ -1,19 +1,17 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_treat_char.c                                    :+:      :+:    :+:   */
+/*   ft_treat_string.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: kmatsuna <kmatsuna@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/13 20:15:45 by kmatsuna          #+#    #+#             */
-/*   Updated: 2024/09/28 16:10:41 by kmatsuna         ###   ########.fr       */
+/*   Created: 2024/09/28 16:11:38 by kmatsuna          #+#    #+#             */
+/*   Updated: 2024/09/28 16:14:06 by kmatsuna         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "printf.h"
-
-int	ft_treat_char(char ch)
+int	ft_treat_string(char *ch)
 {
-	ft_putchar_fd(ch, 1);
-	return (1);
+	ft_putstr_fd(ch, 1);
+	return (ft_strlen(ch));
 }

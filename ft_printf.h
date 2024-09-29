@@ -1,8 +1,9 @@
-#ifndef LIBFT_H
-# define LIBFT_H
+#ifndef PRINTF_H
+# define PRINTF_H
 
 # include <stdlib.h>
 # include <stdarg.h>
+# include <unistd.h>
 
 void	ft_bzero(void *s, size_t n);
 int		ft_isascii(int c);
