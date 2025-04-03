@@ -40,4 +40,21 @@ void ft_putchar_fd(char c, int fd);
 void ft_putstr_fd(char *s, int fd);
 void ft_putendl_fd(char *s, int fd);
 void ft_putnbr_fd(int n, int fd);
+static char *change_base(unsigned long long us, int b, char *r, int c);
+char	*ft_point_base(unsigned long long point, int base);
+int	ft_count_output(const char *save, va_list arg);
+int	ft_printf(const char *input, ...);
+int	ft_putstr_count(char *c);
+char	*ft_tolower_all(char *c);
+int	ft_treat_char(char ch);
+int	ft_treat_hexa(unsigned int i, int f);
+int	ft_treat_int(int i);
+int	get_digit(unsigned long long n);
+int	ft_treat_pointer(unsigned long long point);
+int	ft_treat_something(int c, va_list args);
+int	ft_treat_string(char *ch);
+int	ft_treat_unit(unsigned long long unit);
+static int	ft_put_unbr_count(unsigned long long n);
+
+
 #endif

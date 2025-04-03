@@ -6,15 +6,15 @@
 /*   By: kmatsuna <kmatsuna@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/03 15:44:43 by kmatsuna          #+#    #+#             */
-/*   Updated: 2025/04/03 17:06:17 by kmatsuna         ###   ########.fr       */
+/*   Updated: 2025/04/03 18:09:55 by kmatsuna         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-static char *change_base(unsigned long long us, int b, char *r, int c)
+static char	*change_base(unsigned long long us, int b, char *r, int c)
 {
-	while (us !0)
+	while (us != 0)
 	{
 		if ((us % b) < 10)
 			r[c - 1] = (us % b) + 48;
@@ -42,7 +42,7 @@ char	*ft_point_base(unsigned long long point, int base)
 		count ++;
 	}
 	rtn = ft_calloc(count + 1, sizeof(char));
-	if (!trn)
+	if (!rtn)
 		return (0);
 	rtn = change_base(us, base, rtn, count);
 	return (rtn);

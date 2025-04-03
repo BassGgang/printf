@@ -6,7 +6,7 @@
 /*   By: kmatsuna <kmatsuna@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/03 15:13:56 by kmatsuna          #+#    #+#             */
-/*   Updated: 2025/04/03 15:24:42 by kmatsuna         ###   ########.fr       */
+/*   Updated: 2025/04/03 17:44:18 by kmatsuna         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,15 +14,15 @@
 
 static int	ft_put_unbr_count(unsigned long long n)
 {
-	char	str;
+	char				str;
 	unsigned long long	tmp;
-	size_t t;
+	size_t				t;
 
-    tmp = n;
-    t = 0;
-	while(9 < tmp)
+	tmp = n;
+	t = 0;
+	while (9 < tmp)
 	{
-		tmp = tmp/10;
+		tmp = tmp / 10;
 		t++;
 	}
 	if (9 < n)
@@ -34,7 +34,7 @@ static int	ft_put_unbr_count(unsigned long long n)
 
 int	ft_treat_unit(unsigned long long unit)
 {
-	int n;
+	int	n;
 
 	n = 0;
 	n = ft_put_unbr_count(uint, 1);
