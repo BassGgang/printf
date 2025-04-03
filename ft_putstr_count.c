@@ -1,34 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_count_output.c                                  :+:      :+:    :+:   */
+/*   ft_putstr_count.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: kmatsuna <kmatsuna@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/05 16:23:23 by kmatsuna          #+#    #+#             */
-/*   Updated: 2025/04/03 17:04:15 by kmatsuna         ###   ########.fr       */
+/*   Created: 2025/04/03 16:01:36 by kmatsuna          #+#    #+#             */
+/*   Updated: 2025/04/03 17:04:34 by kmatsuna         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-int	ft_count_output(const char *save, va_list arg)
+int	ft_putstr_count(char *c)
 {
-	size_t	i;
-	size_t	c;
+	int	n;
 
-	i = 0;
-	c = 0;
-	while (save[i])
-	{
-		if (save[i] == '%')
-		{
-			i++;
-			c += ft_treat_something(save[i], arg); //"a = a+b" = "a += b"
-		}
-	}
+	if (!c)
+		return (0);
+	n = ft_strlen(c);
+	ft_putstr_fd(c, 1);
+	return (n);
 }
-
-// ---MEMO---
-// もし%が来たらft_treat_something()にargsとフォーマット識別子を渡す
-// それ以外なら、出力する

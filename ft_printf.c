@@ -6,11 +6,11 @@
 /*   By: kmatsuna <kmatsuna@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/05 16:03:43 by kmatsuna          #+#    #+#             */
-/*   Updated: 2024/09/10 18:58:48 by kmatsuna         ###   ########.fr       */
+/*   Updated: 2025/04/03 17:04:26 by kmatsuna         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "printf.h"
+#include "ft_printf.h"
 
 int	ft_printf(const char *input, ...)
 {

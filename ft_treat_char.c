@@ -6,11 +6,11 @@
 /*   By: kmatsuna <kmatsuna@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/13 20:15:45 by kmatsuna          #+#    #+#             */
-/*   Updated: 2024/09/28 16:10:41 by kmatsuna         ###   ########.fr       */
+/*   Updated: 2025/04/03 17:04:41 by kmatsuna         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "printf.h"
+#include "ft_printf.h"
 
 int	ft_treat_char(char ch)
 {
